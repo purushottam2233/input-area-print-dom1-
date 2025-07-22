@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom quations </title>
+</head>
+<body>
+   <input type="text" id="inputarea">
+    <button id="submit">submit</button>
+    <button id="print">print</button>
+    <button id="rever">reverse</button>
+    <h1 id="new">
+
+    </h1>
+    
+
+
+    <script>
+
+
+        let input=document.getElementById("inputarea");
+       
+                 
+        
+
+        let submit=document.getElementById("submit");
+        console.log(submit)
+
+        let ne=document.getElementById("new");
+        let print=document.getElementById("print");
+        let reverse =document.getElementById("rever");
+
+
+
+
+        let arr=[];      
+        submit.addEventListener('click',()=>{
+             if(input==""){
+                alert("write here")
+             }
+              else{
+                let input=document.getElementById("inputarea");
+        arr.push(input.value)
+        
+console.log(arr)
+         input.value=""
+
+
+
+         
+              }
+         
+            
+        })
+
+
+     print.addEventListener('click',()=>{
+    
+
+              ne.innerHTML=arr
+      
+     })
+
+     reverse.addEventListener('click',()=>{
+    
+console.log(reverse)
+  let newarr= arr.reverse()
+   console.log(arr)
+//    new.innerHTML=new
+
+ne.innerHTML=newarr
+
+
+})
+
+     
+     
+     
+
+
+
+       
+
+
+
+       
+
+
+
+        // input.addEventListener('input',()=>{
+             
+        //     let input=document.getElementById("inputarea").value;
+        // console.log([input])
+
+        // submit.addEventListener('click',()=>{
+        //     ne.innerHTML=input
+            
+        // })
+        // })
+
+
+       
+
+        
+    </script>
+</body>
+</html>

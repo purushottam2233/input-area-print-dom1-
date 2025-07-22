@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input{
+            height: auto;
+            width: 245px;
+            box-shadow: 3px 2px 10px ;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(4, 43, 44);">
+    <div class="input">
+        <!-- <input type="text" id="in" class="in" value=""> -->
+        <textarea name="textarea" id="input" cols="30" rows="10" style="background: cyan;"></textarea>
+
+    </div>
+    <h1 id="app" style="color: white;">
+
+    </h1>
+<!-- <ul>
+    <li id="hr"></li>
+</ul> -->
+
+    <script>
+        let input = document.getElementById("input");
+        console.log(input)
+
+        input.addEventListener('input', () => {
+            let input = document.getElementById("input").value;
+            console.log(input);
+            let para = document.getElementById("app");
+            console.log(para)
+            let hr =document.getElementById("hr");
+
+           para.innerText=input
+               
+          
+            //   hr.append.par
+        })
+
+
+    </script>
+</body>
+
+</html>
